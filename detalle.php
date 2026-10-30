@@ -1,0 +1,44 @@
+<?php
+$titulo_pagina = "MovieHub - Detalle de Película";
+require_once 'includes/header.php';
+?>
+
+    <main class="container my-4 flex-grow-1">
+        <!-- Cabecera de Detalle -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="bg-secondary bg-opacity-25 rounded border border-secondary d-flex align-items-center justify-content-center" style="height: 400px;">
+                    <span class="text-muted">Poster: Dune: Parte dos</span>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex flex-column justify-content-center">
+                <span class="badge bg-secondary w-auto mb-2">CIENCIA FICCIÓN</span>
+                <h1 class="display-5 fw-bold mb-3">Dune: Parte dos</h1>
+                <p class="text-secondary mb-3">2024 • 2h 46m • Denis Villeneuve</p>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <span class="fs-4 fw-bold text-warning">8,8 <small class="text-muted fs-6">/ 10</small></span>
+                    <a href="nueva-resena.php" class="btn btn-light fw-bold btn-sm">Añadir reseña</a>
+                    <a href="mi-lista.php" class="btn btn-outline-light btn-sm">Añadir a mi lista</a>
+                </div>
+                <p class="text-light">Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Reseñas de la Comunidad -->
+        <section>
+            <h3 class="h5 fw-bold mb-3">La comunidad opina</h3>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="card bg-dark border border-secondary p-3 h-100">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div class="bg-secondary rounded-circle" style="width: 30px; height: 30px;"></div>
+                            <span class="fw-bold small">LuciaNet</span>
+                        </div>
+                        <p class="small text-secondary mb-0">"Un espectáculo que también sabe detenerse. Visualmente abrumador y con una profundidad emocional inmensa."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<?php require_once 'includes/footer.php'; ?>
