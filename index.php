@@ -12,3 +12,19 @@ require_once 'includes/header.php';
 </main>
 
 <?php require_once 'includes/footer.php'; ?>
+
+<div class="container my-4">
+    <h3>Búsqueda de Productos en Tiempo Real</h3>
+    <!-- Barra de búsqueda -->
+    <div class="mb-3">
+        <input type="text" id="inputBusqueda" class="form-control" placeholder="Escribe para buscar un producto...">
+    </div>
+
+    <!-- Contenedor dinámico donde se cargarán los resultados -->
+    <div id="resultados">
+        <!-- Los datos aparecerán aquí asincrónicamente -->
+    </div>
+</div>
+
+<!-- Enlazar el script de JavaScript al final -->
+<script src="js/app.js"></script>
